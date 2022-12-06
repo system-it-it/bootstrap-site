@@ -25,6 +25,7 @@ jobs:
           echo ${{ env.NODE_VERSION }}
           echo ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
           echo ${{ env.AZURE_WEBAPP_NAME }}
+          la -ls
 
   deploy:
     permissions:
