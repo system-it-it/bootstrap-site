@@ -21,8 +21,10 @@ jobs:
     - name: Run hello world
       run: echo Hello world!
     - name: Run env 
-      run: echo ${{ env.NODE_VERSION }}
-      
+      run: |
+          echo ${{ env.NODE_VERSION }}
+          echo ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          echo ${{ env.AZURE_WEBAPP_NAME }}
 
   deploy:
     permissions:
