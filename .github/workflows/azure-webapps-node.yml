@@ -17,15 +17,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Run hello world
-      run: echo Hello world!
+    - name: Repo
+      uses: actions/checkout@v3
+    - name: View repo
+      run: ls -la
     - name: Run env 
       run: |
           echo ${{ env.NODE_VERSION }}
           echo ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
           echo ${{ env.AZURE_WEBAPP_NAME }}
-          la -ls
+           
 
   deploy:
     permissions:
