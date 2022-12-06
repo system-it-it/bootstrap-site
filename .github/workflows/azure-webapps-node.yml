@@ -21,7 +21,7 @@ jobs:
     - name: Run hello world
       run: echo Hello world!
     - name: Run env 
-      run: echo {{ env.NODE_VERSION }}
+      run: echo ${{ env.NODE_VERSION }}
 
 #     - name: Set up Node.js
 #       uses: actions/setup-node@v3
